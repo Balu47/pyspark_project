@@ -1,4 +1,4 @@
-# Databricks - Developer Foundations Badge
+# Databricks - ETL Project
 
 The idea behind this project is to ingest data from a purchasing system and load it into a data lake for further analysis.
 
