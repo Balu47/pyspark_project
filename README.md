@@ -1,6 +1,6 @@
 # Databricks - ETL Project
 
-The idea behind this project is to ingest data from a purchasing system and load it into a data lake for further analysis.
+ This project is part of Databricks - Developer Foundations Badge. The idea behind this project is to ingest data from a purchasing system and load it into a data lake for further analysis.
 
 * The main objective of this project is to use raw data to perform **ETL** (Extract, Transform and Load) using  **Azure Databricks**.
 
