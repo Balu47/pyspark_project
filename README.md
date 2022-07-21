@@ -4,20 +4,9 @@
 
 * The main objective of this project is to use raw data to perform **ETL** (Extract, Transform and Load) using  **Azure Databricks**.
 
-### Types of files and data used in the project are listed below:
-
-File Name | Description of File
--------- | ---------
-1.population_by_age.tsv.gz (EuroStat/Blob) | This is a zipped file that contains the population data of countries.
-2.cases_deaths.csv (ECDC) | This csv contains the number emerging Covid Cases and Deaths followed by the each day.
-3.hospital_admissions.csv (ECDC) | This csv file contains the Daily Hospital Admissions, Daily ICU admissions, Weekly Hospital Admissions per 100k, Weekly ICU Admissions per 100k.
-4.testing.csv (ECDC) | This csv file contains the emerging covid cases, tests being done, testing_rate and covid postive_rate on the weekly basis.
-5.lookups (Blob) | Other miscellaneous  files like Calendar Lookup/dim and Country lookup/dim files used.
-
 ### The below image represents the solution architechture for this project :
-![](./Slides_and_Screenshots(Media)/project_solution_architecture.png)
 
-
+![image](https://user-images.githubusercontent.com/79434863/180213985-d8ae2275-701f-49a4-8923-254064994859.png)
 
 ### Step 1: 
 * I have uploaded the *population_by_age.tsv.gz (zipped_file)* into the Azure Blob Storage manually. After that I initialized the Azure Data Factory and created the **Linked Service** which connects to the Blob Storage and created **DataSet** points for the particular file. Along with that I created the **Pipeline** which has a **Copy Activity** that helps to Copy the Population Data from Blob storage to the **ADLS gen2**
