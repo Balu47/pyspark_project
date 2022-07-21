@@ -1,6 +1,6 @@
-# Covid19 Project based on Europe Data End2End
-This project mainly focus on the Europe Covid19 Data. 
-The data has been taken from EuroStat and European Centre for Disease Prevention and Control (ECDC) wesbsites.
+# Databricks - Developer Foundations Badge
+
+The idea behind this project is to ingest data from a purchasing system and load it into a data lake for further analysis.
 
 * The main objective of this project is to use raw data to perform **ETL** (Extract, Transform and Load) using  **Azure Data Factory**.
 
