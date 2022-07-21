@@ -7,6 +7,8 @@
 ### The below image represents the solution architechture for this project :
 
 ![image](https://user-images.githubusercontent.com/79434863/180215332-81f17092-91fa-4ffe-928a-5f71f0294c47.png)
+![image](https://user-images.githubusercontent.com/79434863/180215816-ab18f846-a686-4623-b708-553801283259.png)
+
 
 
 ### Step 1: 
