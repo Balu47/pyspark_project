@@ -2,7 +2,7 @@
 
 The idea behind this project is to ingest data from a purchasing system and load it into a data lake for further analysis.
 
-* The main objective of this project is to use raw data to perform **ETL** (Extract, Transform and Load) using  **Azure Data Factory**.
+* The main objective of this project is to use raw data to perform **ETL** (Extract, Transform and Load) using  **Azure Databricks**.
 
 ### Types of files and data used in the project are listed below:
 
