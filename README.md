@@ -11,8 +11,6 @@
 ### Step 1: 
 In this step you three batches of orders will be ingested, one for 2017, 2018 and 2019.
 
-As each batch is ingested, we are going to append it to a new Delta table, unifying all the datasets into one single dataset.
-
 Each year, different individuals and different standards were used resulting in datasets that vary slightly:
 * In 2017 the backup was written as fixed-width text files
 ![image](https://user-images.githubusercontent.com/79434863/180590852-4da05768-61ce-4bb2-8917-8d61457823ae.png)
