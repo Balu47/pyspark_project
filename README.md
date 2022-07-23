@@ -29,7 +29,7 @@ Now that the three years of orders are combined into a single dataset, we can be
 
 In the one record, there are actually four sub-datasets:
 * The order itself which is the aggregator of the other three datasets.
-* ![image](https://user-images.githubusercontent.com/79434863/180592418-b135331e-72ef-4dc8-b1d3-3d73498bb462.png)
+![image](https://user-images.githubusercontent.com/79434863/180592418-b135331e-72ef-4dc8-b1d3-3d73498bb462.png)
 
 * The line items of each order which includes the price and quantity of each specific item.
 ![image](https://user-images.githubusercontent.com/79434863/180592433-5d46a06e-daec-4ae1-a407-a53eb7d7a06e.png)
