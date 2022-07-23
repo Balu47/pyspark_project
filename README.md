@@ -9,13 +9,6 @@
 ![image](https://user-images.githubusercontent.com/79434863/180215332-81f17092-91fa-4ffe-928a-5f71f0294c47.png)
 
 ### Step 1: 
-* I have uploaded the *population_by_age.tsv.gz (zipped_file)* into the Azure Blob Storage manually. After that I initialized the Azure Data Factory and created the **Linked Service** which connects to the Blob Storage and created **DataSet** points for the particular file. Along with that I created the **Pipeline** which has a **Copy Activity** that helps to Copy the Population Data from Blob storage to the **ADLS gen2**
-
-
-![](./Slides_and_Screenshots(Media)/population_data_blob_ingestion.png)
-
-
-### Step 2: 
 In this step you three batches of orders will be ingested, one for 2017, 2018 and 2019.
 
 As each batch is ingested, we are going to append it to a new Delta table, unifying all the datasets into one single dataset.
@@ -28,19 +21,18 @@ Each year, different individuals and different standards were used resulting in 
 * In 2019 the backup was written as a "standard" comma-separted text files but the format of the column names was changed
 ![image](https://user-images.githubusercontent.com/79434863/180591570-3f6e2b66-0f2f-452f-a421-cf529ce2277d.png)
 
+### Step 2:
+Now that the three years of orders are ingested, we can begin the processes of transforming the data.
 
-### Step 3:
-* Once right after the required data ingested into the ADLS gen2 storage, I have created the dataFlows for all of the four files and creatd the required datasets for those. Now the DataFow will help us to create the transformations according to the project requirement. Once after the dataFlows build, I created the the pipelines for all of those 4 datasets which redirects to the another Container in the same ADLS storage.
+In the one record, there are actually four sub-datasets:
+* The order itself which is the aggregator of the other three datasets.
+* The line items of each order which includes the price and quantity of each specific item.
+* The sales rep placing the order.
+* The customer placing the order - for the sake of simplicity, we will not break this dataset out and leave it as part of the order.
 
-*These the pictures of the dataFlows that are used for the transformations*
+What we want to do next, is to extract all that data into their respective datasets (except the customer data). In other words, we want to normalize the data, in this case, to reduce data duplication.
 
-![](./Slides_and_Screenshots(Media)/dataflow_population_data.png)
 
-![](./Slides_and_Screenshots(Media)/dataflow_cases_and_deaths_data.png)
-
-![](./Slides_and_Screenshots(Media)/dataflow_hospial_admissions_data.png)
-
-![](./Slides_and_Screenshots(Media)/dataflow_testing_data.png)
 
 
 ### Step 4: 
