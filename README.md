@@ -47,4 +47,8 @@ The products being sold by our sales reps are itemized in an XML document which 
 With our four historical datasets properly loaded, we can now begin to process the "current" orders.
 We can process these JSON files as a stream of orders that are continually added to this dataset.
 
+* The orders
+![image](https://user-images.githubusercontent.com/79434863/180592812-a91d9288-029f-409e-a71d-9e21bf31aa4c.png)
 
+* The line items
+![image](https://user-images.githubusercontent.com/79434863/180592846-46dedace-4ee4-4803-9dde-0c6c0c220659.png)
