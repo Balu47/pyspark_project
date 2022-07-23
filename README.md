@@ -16,8 +16,14 @@
 
 
 ### Step 2: 
-* Now I have rest 3 datasets i.e cases_and_deaths, hospial_admissions, testing_data that are successfully uploaded in the GitHub repository under Covid19-Europe-Project
-/main-csv-data-files. Now I have to connect these files to the ADF through ***https:*** Linked Service and gave my base url name to it. Since I wanted to create ingest all these 3 datasets into **ADLS gen2** at a time, I created a json file with 3 files and created parameterized datset and with the help of Lookup acivity and ForEach activity I was able to successfully ingest the data into the **ADLS gen2**.
+In this step you three batches of orders will be ingested, one for 2017, 2018 and 2019.
+
+As each batch is ingested, we are going to append it to a new Delta table, unifying all the datasets into one single dataset.
+
+Each year, different individuals and different standards were used resulting in datasets that vary slightly:
+* In 2017 the backup was written as fixed-width text files
+* In 2018 the backup was written a tab-separated text files
+* In 2019 the backup was written as a "standard" comma-separted text files but the format of the column names was changed
 
 
 ![](./Slides_and_Screenshots(Media)/github_files_ingestion.png)
