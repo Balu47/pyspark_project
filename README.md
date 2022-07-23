@@ -25,8 +25,8 @@ Each year, different individuals and different standards were used resulting in 
 * In 2018 the backup was written a tab-separated text files
 * In 2019 the backup was written as a "standard" comma-separted text files but the format of the column names was changed
 
+![image](https://user-images.githubusercontent.com/79434863/180590852-4da05768-61ce-4bb2-8917-8d61457823ae.png)
 
-![](./Slides_and_Screenshots(Media)/github_files_ingestion.png)
 
 
 ### Step 3:
