@@ -22,11 +22,11 @@ As each batch is ingested, we are going to append it to a new Delta table, unify
 
 Each year, different individuals and different standards were used resulting in datasets that vary slightly:
 * In 2017 the backup was written as fixed-width text files
-* In 2018 the backup was written a tab-separated text files
-* In 2019 the backup was written as a "standard" comma-separted text files but the format of the column names was changed
-
 ![image](https://user-images.githubusercontent.com/79434863/180590852-4da05768-61ce-4bb2-8917-8d61457823ae.png)
-
+* In 2018 the backup was written a tab-separated text files
+![image](https://user-images.githubusercontent.com/79434863/180591399-49950b46-26ca-43a5-8b2b-fe7664c5e7cb.png)
+* In 2019 the backup was written as a "standard" comma-separted text files but the format of the column names was changed
+![image](https://user-images.githubusercontent.com/79434863/180591570-3f6e2b66-0f2f-452f-a421-cf529ce2277d.png)
 
 
 ### Step 3:
